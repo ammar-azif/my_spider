@@ -10,6 +10,6 @@ class RandomUserAgentMiddleware(object):
 
 class ProxyMiddleware(object):
     def process_request(self, request, spider):
-        proxy = settings.get('HTTP_PROXY')
-        if proxy:
-            request.meta['proxy'] = proxy 
+        proxies = settings.get('HTTP_PROXIES')
+        if proxies:
+            request.meta['proxy'] = random.choice(proxies)
