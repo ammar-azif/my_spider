@@ -16,7 +16,6 @@ class CraiglistSpider(scrapy.Spider):
         'http://www.craiglist.org/about/sites',
     )
     download_delay = 2
-    allowed_domains = ['craiglist.org', 'craigslist.org']
 
     def parse(self, response):
         country_region_node = response.xpath('//div[@class="colmask"]/div/h4')

@@ -23,7 +23,7 @@ USER_AGENT_LIST = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/534.55.3 (KHTML, like Gecko) Version/5.1.3 Safari/534.53.10'
 ]
 
-HTTP_PROXY = 'http://127.0.0.1:8123'
+#HTTP_PROXY = 'http://127.0.0.1:8123'
 
 DOWNLOADER_MIDDLEWARES = {
     'my_spider.middlewares.RandomUserAgentMiddleware': 400,
